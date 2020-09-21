@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Pelis App</title>
+</head>
+
+<body>
+  <header>
+    <a class="skip-link" href="#home">
+  Skip to main content</a>
+    <nav>
+      <h1>Pelis App</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#peliculas">Películas</a></li>
+        <li><a href="#favoritas">Favoritas</a></li>
+        <li><a href="#agregar">Agregar Película</a></li>      
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Destacada</h2>
+      <div class="main-container">
+        <div id="izquierda">
+          <h3>Título</h3>
+            <p>Alicia a través del espejo</p>
+            <h4>Género</h4>
+            <p>Fantasia</p>
+            <div id="descripcion_destacada">
+              <h4>Descripción:</h4>
+              <p>Alicia ha pasado los últimos años en el mar, pero a su regreso a Londres, su ayuda es nuevamente requerida en el País de las Maravillas, donde deberá correr una carrera contra el tiempo para salvar al Sombrerero y a toda Infratierra.</p>
+            </div>
+            <h4>Calificación</h4>
+            <p>&#9734;&#9734;&#9734;&#9734;</p>
+        </div>
+        <div>
+          <img class="poster" src="https://i.pinimg.com/originals/d9/f3/17/d9f317290f18d66e922fd7651d83ee39.jpg"
+            alt="Alicia traves del espejo Poster">
+        </div>
+      </div>
+    </section>
+
+    <section id="favoritas">
+      <h2>Favoritas</h2> 
+      <div><button class="boton-recomendada" onclick="peliRecomendada()">Mis recomendadas</button></div>
+      <div class="favoritas_container">
+        <div class="favorita">
+          <div><img class="poster" src="https://images-na.ssl-images-amazon.com/images/I/71NoGfq1vrL._AC_SL1000_.jpg" alt="Frozen"></div>
+          <h3>Título</h3>
+          <p> Frozen</p>
+          <h4>Género</h4>
+          <p>Infantil</p>
+        </div>
+        <div class="favorita">
+          <div><img class="poster" src="https://images-na.ssl-images-amazon.com/images/I/71NoGfq1vrL._AC_SL1000_.jpg" alt="Frozen"></div>
+          <h3>Título</h3>
+          <p>Frozen</p>
+          <h4>Género</h4>
+          <p>Infantil</p>
+        </div>
+        <div class="favorita">
+          <div><img class="poster" src="https://images-na.ssl-images-amazon.com/images/I/71NoGfq1vrL._AC_SL1000_.jpg"></div>
+          <h3>Título</h3>
+          <p>Frozen</p>
+          <h4>Género</h4>
+          <p>Infantil</p>
+        </div>
+      </div>
+    </section>
+    <section id="peliculas">
+      <h2>Peliculas</h2>
+      <h3>Lista de peliculas</h3>
+      <article class="peliculas">
+        <div class="peliculas_container">
+          <div>
+            <img class="poster" src="https://www.pyramidinternational.com/assets/img/products/WDC12279"
+              alt="Trolls">
+          </div>
+          <div class="derecha">
+            <h4>Título</h4>
+            <p> Trolls</p>
+            <h4>Género</h4>
+            <p>Fantasia</p>
+            <h4>Descripción:</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam iste expedita recusandae
+              laudantium accusantium, molestias aut voluptatibus odit maxime veritatis corporis quam pariatur saepe
+              dolore repudiandae consequatur corrupti quibusdam?</p>
+          </div>
+        </div>
+        <div class="peliculas_container">
+          <div>
+            <h4>Calificación</h4>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+          </div>
+          <div class="peliculas_botones">
+            <button>Editar</button>
+            <button onclick="noPodesEliminar()">Eliminar</button>
+          </div>
+        </div>
+      </article>
+      <article id="recomendada" class="peliculas">
+        <div class="peliculas_container">
+          <div>
+            <img class="poster" src="https://www.pyramidinternational.com/assets/img/products/WDC12279"
+              alt="Trolls">
+          </div>
+          <div class="derecha">
+            <h4>Título</h4>
+            <p>Trolls</p>
+            <h4>Género</h4>
+            <p>Fantasia</p>
+            <h4>Descripción:</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam iste expedita recusandae
+              laudantium accusantium, molestias aut voluptatibus odit maxime veritatis corporis quam pariatur saepe
+              dolore repudiandae consequatur corrupti quibusdam?</p>
+          </div>
+        </div>
+        <div class="peliculas_container">
+          <div>
+            <h4>Calificación</h4>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+          </div>
+          <div class="peliculas_botones">
+            <button>Editar</button>
+            <button onclick="noPodesEliminar()">Eliminar</button>
+          </div>
+        </div>
+      </article>
+      <article class="peliculas">
+        <div class="peliculas_container">
+          <div>
+            <img class="poster" src="https://www.pyramidinternational.com/assets/img/products/WDC12279"
+              alt="Alice">
+          </div>
+          <div class="derecha">
+            <h4>Título</h4>
+            <p>Trolls</p>
+            <h4>Género</h4>
+            <p>Fantasia</p>
+            <h4>Descripción:</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam iste expedita recusandae
+              laudantium accusantium, molestias aut voluptatibus odit maxime veritatis corporis quam pariatur saepe
+              dolore repudiandae consequatur corrupti quibusdam?</p>
+          </div>
+        </div>
+        <div class="peliculas_container">
+          <div>
+            <h4>Calificación</h4>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+          </div>
+          <div class="peliculas_botones">
+            <button>Editar</button>
+            <button onclick="noPodesEliminar()">Eliminar</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="agregar">
+      <form id="formulario">
+        <h2>Agregar Pelicula</h2>
+        <p>All fields marked with * are required</p>
+      </br>
+        <label for="titulo">Título *</label>
+        <input class="info" type="text" name="titulo" id="titulo" aria-required=”true”>
+
+        <label for="genero">Género</label>
+        <input class="info" type="text" name="genero" id="genero">
+
+        <label for="descripcion">Descripción</label>
+        <textarea class="" name="descripcion" id="descripcion"></textarea>
+
+        <label for="calificacion">Calificación</label>
+        <input class="info" type="text" name="calificacion" id="calificacion">
+        <button id="enviar" type="submit" onclick="mostrarAlert()">
+          Enviar
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Made By Daiana Blanco 2020</p>
+  </footer>
+</body>
+<script src="./script.js"></script>
+</html>
